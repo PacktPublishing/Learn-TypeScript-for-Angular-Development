@@ -1,0 +1,24 @@
+getName();
+
+// getSurname();
+
+function getName() {
+    return 'john'
+}
+
+const getSurname = function () {
+    return 'tom'
+};
+
+let age: number = 26;
+
+let names: string[] = [];
+
+function addNames(...namesStr: string[]): string[] {
+    namesStr.forEach(function (name) {
+        names.push(name);
+    });
+    return names;
+}
+
+console.log(addNames('john', 'tom'));

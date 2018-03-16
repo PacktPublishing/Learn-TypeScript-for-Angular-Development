@@ -1,0 +1,17 @@
+class Queue<T> {
+    private data = [];
+    push(item: T) {
+        this.data.push(item);
+    }
+    pop() {
+        this.data.shift();
+    }
+}
+
+const queueNumber = new Queue<number>();
+queueNumber.push(10);
+
+const queueString = new Queue<string>();
+queueString.push('10');
+
+

@@ -1,0 +1,58 @@
+class Person {
+    public hobby: string;
+    static numOfPersons: number = 0;
+
+    constructor(private name: string, private age: number) {
+        Person.numOfPersons++;
+    }
+
+    info(): void {
+        console.log(this.name + ' ' + this.age);
+    }
+}
+
+const john = new Person('John', 30);
+john.info();
+
+class Player extends Person {
+    constructor(name: string, age: number) {
+        super(name, age);
+    }
+}
+
+const hank = new Player('Hank', 32);
+hank.info();
+console.log(john);
+console.log(hank);
+
+interface Person {
+    name: string,
+    age: number
+}
+
+// const john: Person = {
+//     name: 'John',
+//     age: 30
+// }
+
+interface Vehicle {
+    drive(): any;
+}
+
+class Car implements Vehicle {
+    drive(): void {
+        console.log('driving a car');
+    }
+}
+
+class Bicycle implements Vehicle {
+    drive(): void {
+        console.log('driving a bike');
+    }
+}
+
+const car = new Car();
+const bike = new Bicycle();
+
+car.drive();
+bike.drive();

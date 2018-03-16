@@ -1,0 +1,10 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1 *ngIf="withTitle" (click)="toggleTitleColor()" [ngClass]="titleColor" [appFontSize]="'33px'">
+    Welcome to {{ title }}!
+  </h1>
+  <a routerLink="home">home</a>
+  <a routerLink="aboutUs">about us</a>
+  <a routerLink="login">login</a>
+</div>
+

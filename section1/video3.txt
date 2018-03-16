@@ -1,0 +1,15 @@
+const PI: number = 3.14;
+
+let age: number = 25;
+age = 34;
+
+let myName: string = 'john';
+
+
+let isProgrammer: boolean = true;
+
+let players: string[] = ['jack', 'john'];
+
+players.push('Tom');
+//players.push(25);
+

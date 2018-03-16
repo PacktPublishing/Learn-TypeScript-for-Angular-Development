@@ -1,0 +1,5 @@
+npm install npm -g
+
+npm install -g typescript
+
+tsc examples.ts
